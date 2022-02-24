@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Finance Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Manage Your Finance</h1>
+    <table class="_table">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Name</th>
+          <th>Transaction Desc.</th>
+          <th>Category</th>
+          <th>Account</th>
+          <th>Amount</th>
+          <th width="50px">
+            <div class="working_container">
+              <button class="addButton" onclick="create_tr('table_body')">
+                <!-- <i class="fa fa-plus"></i> -->
+                <span>+</span>
+              </button>
+            </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody id="table_body">
+        <tr>
+          <td>
+            <input type="text" class="form_control" placeholder="Date">
+          </td>
+          <td>
+            <input type="text" class="form_control" placeholder="Enter Name">
+          </td>
+          <td>
+            <input type="text" class="form_control" placeholder="Enter Desc.">
+          </td>
+          <td>
+            <input type="text" class="form_control" placeholder="Enter Category">
+          </td>
+          <td>
+            <input type="text" class="form_control" placeholder="Enter Account">
+          </td>
+          <td>
+            <input type="text" class="form_control" placeholder="Enter Amount">
+          </td>
+          <td>
+            <div class="working_container">
+              <button class="deleteButton" onclick="remove_tr(this)">
+                <!-- <i class="fa fa-close"></i> -->
+                <span>-</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script type="text/javascript" src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
